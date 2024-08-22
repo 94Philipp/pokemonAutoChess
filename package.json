@@ -4,17 +4,13 @@
   "description": "",
   "keywords": [],
   "license": "BSD-3-Clause",
-  "engines": {
-    "node": "20.16.0",
-    "npm": "10.8.1"
-  },
-  "homepage": "https://github.com/keldaanCommunity/pokemonAutoChess#readme",
+  "homepage": "https://github.com/94Philipp/pokemonAutoChess/#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/keldaanCommunity/pokemonAutoChess.git"
+    "url": "git+https://github.com/94Philipp/pokemonAutoChess/.git"
   },
   "bugs": {
-    "url": "https://github.com/keldaanCommunity/pokemonAutoChess/issues"
+    "url": "https://github.com/94Philipp/pokemonAutoChess//issues"
   },
   "author": "keldaan-ag",
   "contributors": [
@@ -31,7 +27,7 @@
     "build-client": "node esbuild.js --build",
     "build-server": "tsc",
     "download-music": "rimraf -rf ./app/public/src/assets/musics && git clone https://github.com/keldaanCommunity/pokemonAutoChessMusic ./app/public/src/assets/musics",
-    "build": "npm run build-client && npm run build-server",
+    "build": "npm run assetpack && npm run build-client && npm run build-server",
     "start": "node ./app/public/dist/server/app/index.js",
     "add-bot": "node ./app/public/dist/server/db-commands/populate-bot.js",
     "monitor-bot": "node ./app/public/dist/server/scheduled/monitor-bot.js",
